@@ -24,12 +24,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
+        //txtAverageValue.setText(getTheAverageValue(intArray) + "");
+        txtAverageValue.setText(getTheAverageValue(2, 4, 6, 5, 9, 10, 15, 25, 30) + "");
+
+
     }
 
     public int getTheAverageValue(int... numbers) {
         int totalValue = 0;
         for (int value : numbers) {
             totalValue += value;
+            //SAme as totalValue = totalValue + value;
 
         }
         return totalValue / numbers.length;
